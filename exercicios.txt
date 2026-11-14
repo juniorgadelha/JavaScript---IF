@@ -1,0 +1,163 @@
+// === estritamente igual
+// == igual
+// !== estritamente diferente
+// !=
+// > maior que
+// < menor que
+// >= maior igual
+// <= menor igual
+
+
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+
+https://professor.luzerna.ifc.edu.br/marcelo-cendron/wp-content/uploads/sites/40/2017/02/lista-exercicios-if-else.pdf
+
+https://www.javascriptprogressivo.net/2018/08/Exercicios-IF-ELSE-JavaScript.html
+
+
+Fácil 1- Faça um programa que peça dois números e verifique (usando if e else) e imprima o maior deles  
+
+Fácil 2- Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo  
+
+Fácil 3- Faça um programa que verifique (usando if e else) se uma letra digitada é “F” ou “M”. Conforme a letra escrever: F – Feminino, M- Masculino, Sexo inválido.  
+// let letra = "M"
+
+// if(letra.toUpperCase() === "M") {
+//     console.log("M- Masculino");
+    
+// } else if (letra.toUpperCase() === "F") {
+//     console.log("F – Feminino");
+// } else {
+//     console.log("Sexo inválido");
+    
+// }
+
+Fácil 4- Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante.  
+let letra = "a"
+
+if (letra.toLowerCase() === "a" || letra.toLowerCase() === "e" || letra.toLowerCase() ==="i" || letra.toLowerCase() === "o" || letra.toLowerCase() === "u" ) {
+    console.log("É uma vogal");
+     
+} else {
+    console.log("É uma consoante");
+    
+}
+
+
+Fácil 5- Faça um programa para a leitura de duas notas parciais de um aluno.  
+
+A mensagem “Aprovado”, se a média alcançada for maior ou igual a sete;
+A mensagem “Aprovado com Distinção”, se a média for igual a dez;
+A mensagem “Reprovado” se a média for menor de do que sete;
+
+Intermediário 6- Faça um programa que leia três números, verifique (usando if e else), e mostre o maior deles.  
+let maior = 40
+let numero2 = 20
+let numero3 = 30
+
+if (maior<numero2){
+    maior = numero2
+}
+if (maior<numero3){
+    maior = numero3
+}    
+console.log(`${maior} é maior`);
+
+Intermediário 7- Faça um programa que leia três números, verifique (usando if e else) e mostre o maior e o menor deles;  
+
+Fácil 8- Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre o mais barato.  
+
+// Preciso verificar se um numero é multiplo de 3, se ele for multiplo de 3 quero que no console apareça a palavra "mar". No caso de multiplo de 4 quero que apareça no console a palavra "menino", e caso for multiplo dos dois quero que apareça "mar menino" no console. 
+let numero1 = 13
+
+if (numero1 % 3 ===0 && numero1 % 4 === 0) {
+    console.log("mar menino");
+} else if (numero1 % 4 === 0) {
+    console.log("menino");
+} else if (numero1 % 3 ===0)  {
+    console.log("mar menino");
+} else {
+    console.log("Nenhuma das condições foram atendidas");
+    
+}
+
+1)As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver um script que calculará os reajustes.
+
+Faça um script que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+
+    salários até R$ 280,00 (incluindo) : aumento de 20%
+    salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+    salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+    salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+    o salário antes do reajuste;
+    o percentual de aumento aplicado;
+    o valor do aumento;
+    o novo salário, após o aumento.
+
+let salario = 2000
+
+if (salario <= 280) {
+    let novoSalario = salario * 1.2
+    let valorAumento = salario * 0.2
+    console.log(`Salário: R$ ${salario}`);
+    console.log(`Novo Salario: R$ ${novoSalario}`);
+    console.log(`Valor aumento: R$ ${valorAumento}`);
+    console.log(`Percentual aplicado: 20 %`);
+    
+} else if (salario > 280 && salario <=700) {
+    let novoSalario = salario * 1.15
+    let valorAumento = salario * 0.15
+    console.log(`Salário: R$ ${salario}`);
+    console.log(`Novo Salario: R$ ${novoSalario}`);
+    console.log(`Valor aumento: R$ ${valorAumento}`);
+    console.log(`Percentual aplicado: 15 %`);
+
+} else if (salario > 700 && salario<= 1500) {
+    let novoSalario = salario * 1.10
+    let valorAumento = salario * 0.10
+    console.log(`Salário: R$ ${salario}`);
+    console.log(`Novo Salario: R$ ${novoSalario}`);
+    console.log(`Valor aumento: R$ ${valorAumento}`);
+    console.log(`Percentual aplicado: 10 %`);
+    
+} else {
+    let novoSalario = salario * 1.05
+    let valorAumento = salario * 0.05
+    console.log(`Salário: R$ ${salario}`);
+    console.log(`Novo Salario: R$ ${novoSalario}`);
+    console.log(`Valor aumento: R$ ${valorAumento}`);
+    console.log(`Percentual aplicado: 5 %`);
+}
+
+2)Faça um script que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média. A atribuição de conceitos obedece à tabela abaixo:
+
+      Média de Aproveitamento  Conceito
+      Entre 9.0 e 10.0                      A
+      Entre 7.5 e 9.0                        B
+      Entre 6.0 e 7.5                        C
+      Entre 4.0 e 6.0                        D
+      Entre 4.0 e zero                      E
+    O algoritmo deve mostrar numa janela de alertas notas, a média, o conceito correspondente e a mensagem “APROVADO” se o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E.
+
+
+3)
+. Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+    Álcool: até 20 litros, desconto de 3% por litro
+    acima de 20 litros, desconto de 5% por litro
+
+    Gasolina:
+    até 20 litros, desconto de 4% por litro
+    acima de 20 litros, desconto de 6% por litro Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível, calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
+
+
+4)O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
+                          Até 5 Kg               	     Acima de 5 Kg
+    File Duplo      R$ 4,90 por Kg          R$ 5,80 por Kg
+    Alcatra           R$ 5,90 por Kg          R$ 6,80 por Kg
+    Picanha         R$ 6,90 por Kg          R$ 7,80 por Kg
+    Para atender a todos os clientes, cada cliente poderá levar apenas um dos tipos de carne da promoção, porém não há limites para a quantidade de carne por cliente. Se compra for feita no cartão Tabajara o cliente receberá ainda um desconto de 5% sobre o total a compra. Escreva um script que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, contendo as informações da compra: tipo e quantidade de carne, preço total, tipo de pagamento, valor do desconto e valor a pagar.
+
+
+

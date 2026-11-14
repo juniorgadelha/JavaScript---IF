@@ -1,0 +1,20 @@
+
+
+// === estritamente igual
+// == igual
+// !== estritamente diferente
+// !=
+// > maior que
+// < menor que
+// >= maior igual
+// <= menor igual
+
+
+
+if (maior<numero2){
+    maior = numero2
+}
+if (maior<numero3){
+    maior = numero
+}    
+console.log(`${maior} é maior`);

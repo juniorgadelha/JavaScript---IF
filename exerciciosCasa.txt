@@ -1,0 +1,31 @@
+** COMEÇA AQUI **
+// Escreva um código que verifique se uma pessoa é maior de idade (18 anos ou mais) e se possui carteira de motorista.
+
+
+// Escreva um código que verifique se um número está entre 1 e 10.
+
+
+// Escreva um código que determine se uma pessoa é idosa, considerando que uma pessoa é idosa quando tem 60 anos ou mais.
+
+
+// Escreva um código para classificar o desempenho de um aluno com base na sua nota. Se a nota for maior ou igual a 7, o aluno foi aprovado; se for menor que 7 e maior ou igual a 5, o aluno está de recuperação; e se for menor que 5, o aluno foi reprovado.
+
+// Escreva um código que verifique se um número é múltiplo de 3 ou 5.
+
+// Escreva um código que compare dois números e informe qual deles é maior ou se eles são iguais.
+
+// Escreva um código que verifique se a palavra fornecida é exatamente "javascript" (considerando letras minúsculas).
+
+// Escreva um código que verifique se um número é divisível por 7.
+
+// Escreva um código que verifique se uma pessoa tem o nome "Maria".
+
+// Escreva um código que verifique se um número está entre 10 e 20 (inclusive).
+
+// Escreva um código que verifique se um número é maior que 100.
+
+// Escreva um código que verifique se a senha fornecida é "1234".
+
+// Escreva um código que determine se o mês tem 30 ou 31 dias. Considere fevereiro com 28 dias.
+
+// Escreva um código que verifique se um número é múltiplo de 2 e 3 ao mesmo tempo
